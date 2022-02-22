@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+{{titulo}}
+{% endblock title %}
+
+{% block body %}
+<!--post-->
+<section class="mx-auto" style="width: 75%;">
+  <br>
+  <br>
+  <br>
+  <h2>
+    Escola cervejeira americana
+  </h2>
+  <img class="img-fluid img-thumbnail" src="https://github.com/Ediglebison/Site_PAC2/blob/main/img/06-americana.png?raw=true" alt="Estados unidos" style="width:500px; height:auto">
+  <p>
+    O reconhecimento dessa escola cervejeira talvez seja alvo de muita discussão e polémica. Mas uma coisa não tem
+    como negar: a cerveja mais consumida no mundo, atualmente, pertence aos americanos, e seu estilo é American Lager.
+    <br>
+    <br>
+    A cultura dessa escola cervejeira, apesar de recente em relação às outras escolas, se difundiu pelo mundo e ganhou
+    muita popularidade. Temos certeza que 100% dos homebrewers já fizeram a famosa APA (American Pale Ale). <br>
+    <br>
+    E também se você gosta de cerveja artesanal, com certeza experimentou uma APA carregada de lúpulos americanos.
+    Então, argumentos não faltam para o reconhecimento que essa escola merece frente às escolas tradicionais. <br>
+    <br>
+    Apesar de a escola americana ter ficado muito tempo “abandonada” (13 anos) devido a Lei Seca e do domínio das
+    grandes cervejarias, as Craft Beer ressurgiram forte devido a necessidade de novos estilos de cerveja. Essa escola
+    também tem a versatilidade de criação da escola belga. <br>
+    <br>
+    Então, a releitura de receitas tradicionais, de outras escolas cervejeiras, é feita de maneira criativa. Os
+    insumos americanos também são marcantes, principalmente os lúpulos que por lá são produzidos, como os famosos
+    Citra, Cascade, Amarillo, Sincoe e Mosaic. <br>
+    <br>
+    Alguns dos principais estilos dessa escola são: American Lager, American Pale Ale, American IPA, Pumpkin ALE,
+    American Porter, American Strong ALE, American Barleywine. <br>
+    <br>
+    Principais marcas <br>
+    <br>
+    Algumas marcas famosas que encontramos pelo Brasil afora são: Sierra Nevada, Samuel Adams, Anchor, Founders e
+    Brooklyn Brewery. <br>
+  </p>
+</section>
+<section class="mx-auto" style="width: 75%;">
+  <h3>Comentarios</h3>
+  <form>
+    <div class="form-group">
+      <label for="comentario-nome">Nome:</label>
+      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="comentario-email">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-addon"></div>
+        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comentario">Comentario:</label>
+      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{%endblock body%}

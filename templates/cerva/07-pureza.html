@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+{{titulo}}
+{% endblock title %}
+
+{% block body %}
+<!--post-->
+<section class="mx-auto" style="width: 75%;">
+  <br>
+  <br>
+  <br>
+  <h2>
+    Lei de pureza alemã: REINHEITSGEBOT
+  </h2>
+  <img class="img-fluid img-thumbnail" src="https://github.com/Ediglebison/Site_PAC2/blob/main/img/07-pureza.png?raw=true" alt="REINHEITSGEBOT" style="width:500px; height:auto">
+  <p>
+    Imagine-se curtindo uma ressaca de matar. Dor de cabeça, choro e ranger de dentes. E você tem absoluta certeza de
+    que essa ressaca veio de uma cerveja sabidamente muito ruim que você tomou na véspera.
+    <br>
+    Foi exatamente o mal que acometeu Guilherme IV, duque da Baviera (região alemã onde está Munique), no dia 23 de
+    abril do longínquo ano de 1516, quando assinou a Reinheitsgebot, ou, para os íntimos, a Lei de Pureza da Cerveja,
+    a qual determinava que a breja local só poderia, dali em diante, ser produzida utilizando-se apenas água pura,
+    malte e lúpulo. O fermento, por sua vez, foi incluído nesta lei algum tempo mais tarde, uma vez que ainda não era
+    conhecido. <br>
+    <br>
+    Guilherme tinha ótimos motivos para radicalizar. Até então, os cervejeiros da Baviera, na tentativa de “inovar”
+    suas receitas, incluíam ingredientes bizarros na cerveja, como fuligem e cal, o que, provavelmente, teria causado
+    a ressaca ducal. <br>
+    <br>
+    Hoje, muitas cervejarias ainda seguem à risca a Reinheitsgebot, principalmente as alemãs e belgas, o que explica a
+    excelência das brejas produzidas nesses países. No Brasil, várias cervejarias artesanais também compartilham do
+    mesmo ideal de Gulherme, como a Eisenbahn e a Falke, produzindo cervejas de qualidade indiscutível. <br>
+    <br>
+    Leia a íntegra traduzida da Reinheitsgebot: <br>
+  <blockquote class="blockquote">
+    <p>"Como a cerveja deve ser elaborada e vendida neste país, no verão e no inverno: Decretamos, firmamos e
+      estabelecemos, baseados no Conselho Regional, que daqui em diante, no principado da Baviera, tanto nos campos
+      como nas cidades e feiras, de São Miguel até São Jorge, uma caneca de 1 litro (1) ou uma cabeça (2) de cerveja
+      sejam vendidos por não mais que 1 Pfennig da moeda de Munique, e de São Jorge até São Miguel a caneca de 1 litro
+      por não mais que 2 Pfennig da mesma moeda, e a cabeça por não mais que 3 Heller (3), sob as penas da lei. Se
+      alguém fabricar ou tiver cerveja diferente da Märzen, não pode de forma alguma vende-la por preço superior a 1
+      Pfennig por caneca de 1 litro . Em especial, desejamos que daqui em diante, em todas as nossas cidades, nas
+      feiras, no campo, nenhuma cerveja contenha outra coisa além de cevada, lúpulo e água. Quem, conhecendo esta
+      ordem, a transgredir e não respeitar, terá seu barril de cerveja confiscado pela autoridade judicial competente,
+      por castigo e sem apelo, tantas vezes quantas acontecer. No entanto, se um taberneiro comprar de um fabricante
+      um, dois ou três baldes (4) de cerveja para servir ao povo comum, a ele somente, e a mais ninguém, será
+      permitido e não proibido vender e servir a caneca de 1 litro ou a cabeça de cerveja por 1 Heller a mais que o
+      estabelecido anteriormente.” </p>
+    <footer class="blockquote-footer"><cite title="Source Title">Guilherme IV, duque da Baviera, no dia de São Jorge
+        (23 de abril), no ano de 1516, em Ingolstadt"</cite></footer>
+    (Extraído do livro "O catecismo da Cerveja", de Conrad Seidl - Editora Senac) <br>
+  </blockquote>
+  <br>
+  (1) A caneca da Baviera tinha na época 1,069 litros. <br>
+  (2) Tigela em forma semicircular para líquidos, com pouco menos de uma caneca de 1 litro. <br>
+  (3) O Heller geralmente equivale a meio Pfennig <br>
+  (4) Equivalente a 60 canecas de 1 litro. <br>
+  </p>
+</section>
+<section class="mx-auto" style="width: 75%;">
+  <h3>Comentarios</h3>
+  <form>
+    <div class="form-group">
+      <label for="comentario-nome">Nome:</label>
+      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="comentario-email">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-addon"></div>
+        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comentario">Comentario:</label>
+      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{%endblock body%}

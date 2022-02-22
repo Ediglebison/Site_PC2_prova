@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+{{titulo}}
+{% endblock title %}
+
+{% block body %}
+<!--post-->
+<section class="mx-auto" style="width: 75%;">
+  <br>
+  <br>
+  <br>
+  <h2>
+    O que é CERVEJA?
+  </h2>
+  <img class="img-fluid img-thumbnail" src="https://github.com/Ediglebison/Site_PAC2/blob/main/img/08-cerveja.png?raw=true" alt="cerveja" style="width:500px; height:auto">
+  <p>
+    Antes de começar a falar sobre cerveja, seria interessante definí-la para que não haja dúvidas sobre o que ela é o
+    porquê:<br>
+    <br>
+    Cerveja é uma bebida alcoólica carbonatada, produzida através da fermentação de materiais com amido,
+    principalmente cereais maltados como a cevada e o trigo. Seu preparo inclui água como parte importante do processo
+    e algumas receitas levam ainda lúpulo e fermento, além de outros temperos, como frutas, ervas e outras plantas.
+    <br>
+    <br>
+    Vinho, por exemplo, é feito de uva e uva não possui amido. Whisky e vodka podem até ser feitos de cereais
+    maltados, porém são destilados, portanto não são cerveja (isso você já sabia né?).
+    <br>
+    Dentro desta definição de cerveja encontram-se diversas variedades, de acordo com fatores como método de produção,
+    ingredientes usados, cor, sabor, aroma, receita, história, origem e assim por diante.
+  <h3>
+    LAGERS
+  </h3>
+  As Lagers são as cervejas mais consumidas no mundo, responsáveis por exemplo por mais de 99% das vendas de cerveja
+  do Brasil.
+  <br>
+  Originarias da Europa Central no século 14, são cervejas de baixa fermentação ou fermentação a frio (de 6 a 12ºC),
+  com graduação alcoólica geralmente entre 4 e 5%. Tem entre seus tipos mais conhecidos a Pilsener, tipo de cerveja
+  originariamente criada no século 19 na cidade de Pilsen, região da Boêmia da República Tcheca, e que por isso muitas
+  vezes é chamada de Pilsen ou Pils ao invés de Pilsener.
+  <h3>
+    ALES
+  </h3>
+  O que a difere das Lager é o tipo de fermentação, que é feita em temperaturas mais altas, geralmente entre 15 e
+  24ºC. É um processo antigo de fabricação, o que fez com que as cervejas do tipo Ale fossem as únicas disponíveis até
+  meados do século XIX, quando foi inventada a baixa fermentação (Lager).
+  <br>
+  Dada essa “antigüidade”, aliada principalmente à fermentação a quente, os sabores complexos, maltados e lupulados
+  das cervejas Ale são incomparavelmente mais perceptíveis, sendo cervejas mais encorpadas e vigorosas.
+  <br>
+  Assim ao longo dos séculos, surgiram inúmeros subtipos de cervejas Ale.
+  <h3>
+    LAMBICS
+  </h3>
+  A maioria dos especialistas classifica as cervejas do tipo Lambic como uma terceira categoria, em separado das Lager
+  e Ale, por causa do seu tipo de fermentação, que é espontânea.
+  <br>
+  São feitas de trigo, porém não são adicionadas leveduras no mosto, ficando a fermentação a cargo dos agentes
+  naturais, os quais são encontrados somente numa pequena área ao redor de Bruxelas. Daí a dificuldade em
+  encontrá-las, bem como o seu preço elevado.
+  <br>
+  Trata-se de um tipo muito peculiar de cerveja, dotada de uma gama extremamente numerosa de aromas, os quais vão do
+  frutado (como framboesa, cereja ou banana) ao extremamente cítrico (como vinho branco ou vinagre).
+  <br>
+  É o tipo mais antigo de cerveja feito no mundo, fato que, por si só, exige que você as experimente.
+  <h3>
+    OUTRAS NOMENCLATURAS
+  </h3>
+  <h3>
+    TRAPISTAS
+  </h3>
+  Não são consideradas propriamente um estilo único, pois algumas são Dubbel, Tripel ou Quadrupel. Todavia, dado o
+  fato de algumas cervejas trapistas serem consideradas as melhores do mundo por inúmeros especialistas, merecem ser
+  “separadas” das outras.
+  <br>
+  A Ordem Trapista (oficialmente, Ordem dos Cistercienses Reformados de Estrita Observância) é uma congregação
+  religiosa católica. Seus monges seguem o princípio fundamental do ora et labora, vivendo em grande austeridade e
+  silêncio. Fazem três votos: pobreza, castidade e obediência. Assim, as cervejas, fabricadas em pequenas quantidades
+  no interior dos mosteiros muitas vezes são difíceis de ser encontradas no mercado, já que os monges não as
+  comercializam com o propósito do lucro, mas apenas para manter o funcionamento da própria abadia e alguns serviços
+  de caridade.
+  <br>
+  Atualmente, a ITA (International Trappist Association), entidade criada com o propósito de definir as regras do
+  estilo e proteger o nome do uso abusivo por parte de outras marcas, possui como membros apenas sete abadias
+  trapistas, seis na Bélgica (Westvleteren, Chimay, Orval, Achel, Wesmalle e Rochefort) e uma na Holanda
+  (Koningshoeven, onde são fabricadas as cervejas La Trappe). A entidade criou, também, um selo de identificação que
+  só pode ser utilizado em produtos trapistas autênticos.
+  <br>
+  Algumas cervejas trapistas possuem tempo de guarda de mais de 10 anos. <br>
+  </p>
+</section>
+<section class="mx-auto" style="width: 75%;">
+  <h3>Comentarios</h3>
+  <form>
+    <div class="form-group">
+      <label for="comentario-nome">Nome:</label>
+      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="comentario-email">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-addon"></div>
+        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comentario">Comentario:</label>
+      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{%endblock body%}

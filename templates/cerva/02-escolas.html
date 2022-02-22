@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+{{titulo}}
+{% endblock title %}
+
+{% block body %}
+<!--post-->
+<section class="mx-auto" style="width: 75%;">
+  <br>
+  <br>
+  <br>
+  <h2>
+    O que são escolas cervejeiras?
+  </h2>
+  <img class="img-fluid img-thumbnail" src="https://github.com/Ediglebison/Site_PAC2/blob/main/img/02-escolas.png?raw=true" alt="Escolas cervejeiras"
+    style="width:500px; height:auto">
+  <p>
+    Essa é uma boa pergunta, ainda mais se você quer aprender mais sobre a história da cerveja. <br>
+    <br>
+    Então, as escolas cervejeiras nada mais são do que uma representação dos países de origem onde são produzidas
+    determinadas cervejas, sendo que cada país possuí seus estilos de cervejas próprios com suas características e
+    personalidades próprias.<br>
+    <br>
+    Alguns países já têm uma tradição cervejeira de milhares de anos como, por exemplo, as escolas alemã, belga e
+    inglesa. Outras ocuparam seu espaço no universo cervejeiro a pouco tempo, como por exemplo a escola americana; e
+    existem ainda aquelas escolas que ainda estão procurando seu lugar ao sol, como por exemplo a escola brasileira.
+    <br>
+    <br>
+    Atualmente, entendemos que as principais escolas são representadas por 4 países: Alemanha, Bélgica e Inglaterra e
+    Estados Unidos. <br>
+    <br>
+    Cada país citado acima tem sua metodologia e personalidade própria de encarar a produção da bebida. E claro, até
+    mesmo a cultura do povo local moldaram e moldam o “jeitão” que a cervejas tem. Não significa, no entanto, que
+    somente aquela escola produza aquele estilo de cerveja. O mundo cervejeiro é feito de reinvenções. <br>
+  </p>
+</section>
+<section class="mx-auto" style="width: 75%;">
+  <h3>Comentarios</h3>
+  <form>
+    <div class="form-group">
+      <label for="comentario-nome">Nome:</label>
+      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="comentario-email">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-addon"></div>
+        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comentario">Comentario:</label>
+      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{%endblock body%}

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+{{titulo}}
+{% endblock title %}
+
+{% block body %}
+<!--post-->
+<section class="mx-auto" style="width: 75%;">
+  <br>
+  <br>
+  <br>
+  <h2>
+    Escola cervejeira inglesa
+  </h2>
+  <img class="img-fluid img-thumbnail" src="https://github.com/Ediglebison/Site_PAC2/blob/main/img/04-inglesa.png?raw=true" alt="Inglaterra" style="width:500px; height:auto">
+  <p>
+    Diferente da escola alemã, a Escola Inglesa, ou Britânica, tem por característica tradicional cervejas mais
+    amargas e secas. <br>
+    <br>
+    Viva o lúpulo! <br>
+    <br>
+    As cervejas por lá é até hoje conhecida como Ale’s, que nada mais é do que cerveja de alta fermentação. <br>
+    <br>
+    Logo, são mais complexas no sabor que as Lagers alemãs, que tem o sabor mais arredondado. Elas também são mais
+    amargas, mesmo nos estilos mais populares, e algumas levam doses de açúcar como fonte de carboidrato; interessante
+    ressaltar que o açúcar não deixa a cerveja mais doce, e sim ajuda a aumentar o teor alcoólico da bebida,
+    tornando-a mais seca, ideal para climas mais frios. <br>
+    <br>
+    Outra característica da Escola Inglesa é que as cervejas tendem a ser levemente descarbonatadas (com menos gás) e
+    mais fortes em sabor, amargor e teor alcoólico. Os estilos mais comuns por lá são: Pale Ale, Porter, Stout,
+    Barleywine, Bitter, Brown Ale e a famosa IPA (Indian Pale ALE). <br>
+    <br>
+    Mas, incomodados com a falta de opção e qualidade, fez-se um movimento em que hoje tem-se diversas cervejarias
+    locais fazendo cervejas de alta qualidade e até inovadoras, como a escocesa Brewdog. <br>
+    <br>
+    Principais marcas <br>
+    <br>
+    Na Grã Bretanha, a tradição é beber cerveja em pubs. As marcas mais comuns aqui no Brasil são: Guinness, Murphys,
+    Fuller’s e Newcastle. É interessante ao longo do século passado passou-se muito tempo com os variados estilos de
+    cerveja quase extintos, sendo concentrado apenas em cervejas baratas e de baixa qualidade. <br>
+  </p>
+</section>
+<section class="mx-auto" style="width: 75%;">
+  <h3>Comentarios</h3>
+  <form>
+    <div class="form-group">
+      <label for="comentario-nome">Nome:</label>
+      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="comentario-email">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-addon"></div>
+        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comentario">Comentario:</label>
+      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{%endblock body%}

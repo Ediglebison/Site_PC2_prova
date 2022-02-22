@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+{{titulo}}
+{% endblock title %}
+
+{% block body %}
+<!--post-->
+<section class="mx-auto" style="width: 75%;">
+  <br>
+  <br>
+  <br>
+  <h2>
+    Conheça a história da cerveja
+  </h2>
+  <img class="img-fluid img-thumbnail" src="https://github.com/Ediglebison/Site_PAC2/blob/main/img/01-historia.png?raw=true" alt="Historia da cerveja"
+    style="width:500px; height:auto">
+  <p>
+    Que tal conhecer mais sobre a história de uma das bebidas mais populares do mundo? <br>
+    <br>
+    Em mês de Oktoberfest, que tal conhecer um pouco sobre a história da personagem principal da festa que atrai
+    milhares de turistas para Blumenau todos os anos? Estamos falando da cerveja!!! <br>
+    <br>
+    Há cerca de 10 mil anos, o homem descobriu, por acaso, o processo de fermentação. Assim, em pequena escala,
+    surgiram as primeiras bebidas alcoólicas. Mais tarde, a cerveja era produzida inicialmente pelos padeiros, em
+    razão da natureza dos ingredientes que utilizavam: leveduras e grãos de cereais. A cevada era deixada de molho até
+    germinar e, então, moída grosseiramente e moldada nos bolos em que se adicionava a levedura. Os bolos, depois de
+    parcialmente assados e desfeitos, eram colocados em jarras com água e deixados fermentar.
+    <br>
+    Há evidências de que a prática da cervejaria teve início na região da Mesopotâmia, onde a cevada cresce em estado
+    selvagem. Os primeiros registros de fabricação de cerveja têm aproximadamente 6 mil anos e remetem aos Sumérios,
+    povo mesopotâmico. A primeira cerveja produzida foi, provavelmente, um acidente. Documentos históricos mostram que
+    em 2100 a.C., os sumérios alegravam-se com uma bebida fermentada, obtida de cereais. Na Suméria, cerca de 40% da
+    produção dos cereais destinavam-se às cervejarias chamadas “casas de cerveja”, mantida por mulheres. Os egípcios
+    logo aprenderam a arte de fabricar cerveja e carregaram a tradição no milênio seguinte, agregando o líquido à sua
+    dieta diária. A cerveja produzida naquela época era bem diferente da de hoje em dia. Era escura, forte e muitas
+    vezes substituía a água, sujeita a todos os tipos de contaminação, causando diversas doenças à população. Mas a
+    base do produto, a cevada fermentada, era a mesma. <br>
+    <br>
+    A expansão definitiva da cerveja aconteceu com o Império Romano, que se encarregou de levá-la para todos os cantos
+    onde ainda não era conhecida. É atribuída a Júlio César a introdução de cerveja entre os britânicos, pois quando
+    ele chegou à Britânia, o povo bebia apenas leite e licor de mel. Através dos romanos, a cerveja também chegou à
+    Gália (hoje França). E foi aí que a bebida definitivamente ganhou seu nome latino. Os gauleses denominavam essa
+    bebida de cevada fermentada de “cerevisia” ou “cervisia”, em homenagem a Ceres, deusa da agricultura e da
+    fertilidade. <br>
+    <br>
+    Na Idade Média, os conventos assumiram a fabricação da cerveja que, até então, era uma atividade familiar, como
+    cozer o pão ou fiar o linho. Pouco a pouco, à medida que cresciam os aglomerados populacionais e que se libertavam
+    os servos, entre os séculos VII e IX, começaram a surgir artesãos cervejeiros, trabalhando principalmente para
+    grandes senhores e para abadias e mosteiros. O monopólio da fabricação da cerveja até por volta do século XI
+    continuou com os conventos, que desempenhavam relevante papel social e cultural, acolhendo os peregrinos de outras
+    regiões. Por isso, todo monastério tinha um albergue e uma cervejaria. Os monges por serem os únicos que
+    reproduziam os manuscritos da época, puderam conservar e aperfeiçoar a técnica de fabricação da cerveja. <br>
+    <br>
+    Com o aumento do consumo da bebida, os artesãos das cidades começaram também a produzir cerveja, o que levou os
+    poderes de públicos a se preocuparem com o hábito de se beber cerveja. As tabernas ou cervejarias eram locais onde
+    se discutiam assuntos importantes e muitos negócios eram concluídos entre um gole e outro de cerveja. A partir do
+    século XII, pequenas fábricas foram surgindo nas cidades europeias e, com uma técnica mais aperfeiçoada, os
+    cervejeiros já sabiam que a água tinha um papel determinante na qualidade da cerveja. Assim a escolha da
+    localização da fábrica era feita em função da proximidade de fontes de água muito boa. <br>
+    <br>
+    Com a posterior invenção de instrumentos científicos (termômetros e outros), assim como o aperfeiçoamento de novas
+    técnicas de produção, o que se bebe hoje é um conjunto de todas as descobertas que possibilitaram o aprimoramento
+    de uma das bebidas mais populares do mundo. <br>
+  </p>
+</section>
+<section class="mx-auto" style="width: 75%;">
+  <h3>Comentarios</h3>
+  <form>
+    <div class="form-group">
+      <label for="comentario-nome">Nome:</label>
+      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="comentario-email">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-addon"></div>
+        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comentario">Comentario:</label>
+      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{%endblock body %}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+{{titulo}}
+{% endblock title %}
+
+{% block body %}
+<!--post-->
+<section class="mx-auto" style="width: 75%;">
+  <br>
+  <br>
+  <br>
+  <h2>
+    Como fazer cerveja - O Processo de fabricação
+  </h2>
+  <img class="img-fluid img-thumbnail" src="https://github.com/Ediglebison/Site_PAC2/blob/main/img/10-fabricacao.jpg?raw=true" alt="fabricação" style="width:500px; height:auto">
+  <p>
+    Produzir cerveja requer três processos básicos: mostura, fervura e fermentação. Os dois primeiros geralmente
+    ocorrem no mesmo dia. Já a fermentação dura de uma a algumas semanas. A seguir, uma descrição resumida de cada
+    processo.<br>
+  <h3>
+    MOSTURA
+  </h3>
+  Este processo, que dura de 2 a 5 horas, extrai os açúcares fermentáveis e outros componentes importantes do malte.
+  Primeiro o malte é moído, depois misturado à água quente, permanecendo a uma temperatura de aproximadamente 65ºC.
+  Depois disso, a água rica em açúcares (agora chamada de MOSTO) é retirada e o que restou do malte moído é lavado com
+  água quente para extrair o máximo possível dos açúcares que restaram.<br>
+  <h3>
+    FERVURA
+  </h3>
+  O mosto é fervido na caldeira de fervura, normalmente de 1 a 2 horas. Durante a fervura, o lúpulo é adicionado em
+  momentos variados, com a finalidade de conferir amargor, paladar e aroma que o cervejeiro deseja. No final da
+  fervura, o mosto é separado do lúpulo e resfriado, sendo preparado para a fermentação. <br>
+  <h3>
+    FERMENTAÇÃO
+  </h3>
+  O fermento é adicionado ao mosto para iniciar a fermentação e transformá-la em cerveja. As fermentações “Ale” (de
+  alta fermentação) duram de 5 a 10 dias a temperaturas de 16 a 21ºC. As fermentações “Lager” (de baixa fermentação)
+  geralmente são mais longas, com uma fermentação inicial de 10 a 13ºC, seguida de um período de maturação a 1ºC. No
+  final da fermentação, a cerveja é carbonatada e envasada. <br>
+  É claro quer há inúmeros processos de fazer cerveja, como com fermentação natural, carbonatação natural, adição de
+  outros "temperos" além do lúpulo, etc. Todavia, o roteiro resumido acima dá uma boa idéia inicial da “espinha
+  dorsal” da produção do nobre líquido. <br>
+  </p>
+</section>
+<section class="mx-auto" style="width: 75%;">
+  <h3>Comentarios</h3>
+  <form>
+    <div class="form-group">
+      <label for="comentario-nome">Nome:</label>
+      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="comentario-email">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-addon"></div>
+        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comentario">Comentario:</label>
+      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{%endblock body%}

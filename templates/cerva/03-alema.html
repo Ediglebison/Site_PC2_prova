@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+{{titulo}}
+{% endblock title %}
+
+{% block body %}
+<!--post-->
+<section class="mx-auto" style="width: 75%;">
+  <br>
+  <br>
+  <br>
+  <h2>
+    Escola cervejeira alemã
+  </h2>
+  <img class="img-fluid img-thumbnail" src="https://github.com/Ediglebison/Site_PAC2/blob/main/img/03-alemanha.png?raw=true" alt="Alemanha" style="width:500px; height:auto">
+  <p>
+    A Escola Alemã é, sem dúvida, a mais cultuada mundialmente. Quando se pensa em cerveja, tem-se a figura de um
+    alemão de chapéu verde, suspensório, shorts e meias até os joelhos bebendo um baita caneco de cerveja. <br>
+    <br>
+    Nesta escola, é interessante fazer um adendo e incluir a República Tcheca, afinal, lá se inventou a tal cerveja
+    Pilsen que tanto conhecemos (ou pelo menos, pensamos que sim). A tradição germânica é regida pela Lei de Pureza de
+    1516, em que se determinou que cerveja de verdade era feita com apensa 3 ingredientes (a fermentação ainda era
+    algo misterioso/ desconhecido): malte, água e lúpulo. Essa é a lei mais antiga de alimentos no mundo. <br>
+    <br>
+    Desta forma, as cervejas alemãs têm como característica a eficiência e qualidade técnica, porém com pouco espaço
+    para criatividade. Não se admite a adição de frutas ou especiarias, como existe nas cervejas belgas; e as
+    leveduras utilizadas nas cervejas germânicas são de caráter límpido, sem deixar muitos resíduos aromáticos. <br>
+    <br>
+    A maioria dos estilos produzidos por lá são Lagers (cervejas de baixa fermentação), como Pilsen, Helles, Bock,
+    Schwarzbier. Outra tradição alemã são as cervejas de trigo da Bavária e o consumo em grandes festas coletivas,
+    como a Oktoberfest de Munique. <br>
+    <br>
+    A característica local mais marcante é a produção de cervejas mais maltadas, ou seja, mais adocicadas do que
+    lupuladas (amargas). <br>
+    <br>
+    Principais marcas <br>
+    <br>
+    As marcas mais comuns aqui no Brasil são: Paulaner, Erdinger, Franziskaner, Schneider, Hofbrau e Weihenstephaner.
+    <br>
+  </p>
+</section>
+<section class="mx-auto" style="width: 75%;">
+  <h3>Comentarios</h3>
+  <form>
+    <div class="form-group">
+      <label for="comentario-nome">Nome:</label>
+      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="comentario-email">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-addon"></div>
+        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comentario">Comentario:</label>
+      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{%endblock body%}
