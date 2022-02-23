@@ -13,7 +13,10 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media") 
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,6 +30,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'testedjango123@gmail.com'
+EMAIL_HOST_PASSWORD = '2021django!'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'default from email'
 
 # Application definition
 
@@ -123,11 +133,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_URL = 'cerva/img/'
 
-MEDIA_ROOT = (
-  os.path.join(BASE_DIR, "cerva") 
-)
+
+
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "cerva"),

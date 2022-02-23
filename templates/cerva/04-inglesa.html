@@ -45,26 +45,26 @@
 </section>
 <section class="mx-auto" style="width: 75%;">
   <h3>Comentarios</h3>
-  <form>
-    <div class="form-group">
-      <label for="comentario-nome">Nome:</label>
-      <input id="comentario-nome" class="form-control" type="text" placeholder="Seu nome">
-    </div>
+  <form action="" method="post">
+    {% csrf_token %}
 
     <div class="form-group">
-      <label for="comentario-email">E-mail:</label>
-      <div class="input-group">
-        <div class="input-group-addon"></div>
-        <input id="comentario-email" class="form-control" type="email" placeholder="Seu e-mail">
-      </div>
+        <label>Nome:</label>
+        <input type="text" class="form-control" id="nome" name="nome">
     </div>
-
     <div class="form-group">
-      <label for="comentario">Comentario:</label>
-      <input id="comentario" class="form-control" type="text" placeholder="Seu comentario">
+        <label>Email</label>
+        <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label>Comentario</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Email que vai recebero comentario</label>
+        <input type="email" class="form-control" id="email2" name="email2">
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
-  </form>
+</form>
 </section>
-
 {%endblock body%}

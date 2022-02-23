@@ -4,11 +4,15 @@ from django.http import HttpResponse
 
 # Create your views here.
 
+from .models import Question
+from django.core.mail import send_mail
 
 def index(request):
+    imagem = Question.objects.first()
     context = {
         'titulo': 'Inicio',
-        'page': 'index'
+        'page': 'index',
+        'img': imagem
     }
     return render(request, "cerva/index.html", context)
 
@@ -17,6 +21,22 @@ def contato(request):
         'titulo': 'Contato',
         'page': 'contato'
     }
+
+    if request.method == 'POST':
+        mensagem = "Dados da mensagem:\n"
+        mensagem += "Nome: "+request.POST['nome']+"\n"
+        mensagem += "Email: "+request.POST['email']+"\n"
+        mensagem += "Mensagem: "+request.POST['mensagem']+"\n"
+        send_mail(
+        'Mensagem de contato do sistema Cervas!',
+        mensagem,
+        'testedjango123@gmail.com',
+        [request.POST['email']],
+        fail_silently=False,
+        )
+
+    
+
     return render(request, "cerva/contato.html", context)
 
 def historia(request):
